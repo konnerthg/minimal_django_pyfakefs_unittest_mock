@@ -4,9 +4,13 @@ Minimal Django project to produce a bug caused by the combination of pyfakefs an
 Based on https://docs.djangoproject.com/en/5.0/intro/tutorial01/
 
 Steps to reproduce:
+
 pip install -r requirements.txt
+
 cd mysite
+
 python manage.py runserver
+
 pytest -m with_fakefs
 
 Expected:
